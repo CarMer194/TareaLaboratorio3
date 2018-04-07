@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.carlos.tarealaboratorio3.MainActivity"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="12dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    android:background="@drawable/borde">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/codigo_del_proletario"
+        />
+    <TextView
+        android:id="@+id/textNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/carlos_merino"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/negro"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/textCarrera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ingenieria_informatica"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/negro"
+        android:layout_marginBottom="25dp"/>
+    <LinearLayout
+        android:id="@+id/informacionUno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:src="@drawable/facebook"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/textNombreFacebook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/carlos_merino"
+            android:textColor="@color/negro"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/gmail"/>
+        <TextView
+            android:id="@+id/textGmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/carlos_merino194"
+            android:textColor="@color/negro"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/github"/>
+
+        <TextView
+            android:id="@+id/textGit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/carmer194"
+            android:layout_weight="1"
+            android:textColor="@color/negro"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/whatsapp"
+            />
+        <TextView
+            android:id="@+id/textNumeroTEL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/_503_70319666"
+            android:layout_weight="1"
+            android:textColor="@color/negro"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/compartir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/compartir"
+        android:textSize="13sp"
+        android:onClick="compartir"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/powered_by_carlos_merino"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"/>
+
+</LinearLayout>
