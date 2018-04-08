@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("\n\n\n*******si sirve el onclick*******\n");
         String mensaje,facebook,github, gmail;
         Resources recurso;
-        String imageUri = "android.resource://" + getPackageName() + "/drawable/" + "foto_ip";
+        String imageUri = "android.resource://" + getPackageName() + "/drawable/" + "codigo_del_proletario";
         Intent sendIntent = new Intent();
         recurso = getResources();
         mensaje = recurso.getString(R.string.mensajecompartir);
@@ -29,10 +29,10 @@ public class MainActivity extends AppCompatActivity {
         gmail="gmail: " + recurso.getString(R.string.carlos_merino194);
 
         sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         sendIntent.putExtra(Intent.EXTRA_TEXT, mensaje +" " + " "+ facebook +" "+ github +" "+gmail);
         sendIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse(imageUri));
-        sendIntent.setType("image/jpg");
-        sendIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-        startActivity(Intent.createChooser(sendIntent, "Share image"));
+        sendIntent.setType("image/*");
+        startActivity(Intent.createChooser(sendIntent, "compartir informacion en"));
     }
 }
